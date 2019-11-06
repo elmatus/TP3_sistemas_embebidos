@@ -66,7 +66,7 @@ static void prvSetupHardware(void)
 	Board_Init();
 
 	/* Initial LED state is off */
-	Board_LED_Set(LED3, LED_OFF);
+	Board_LED_Set(LED2, LED_OFF);
 }
 
 
@@ -96,7 +96,7 @@ static void vTask1(void *pvParameters)
 		DEBUGOUT(pcTaskName);
 
 		/* Delay for a period. */
-		for (ul = 0; ul < mainDELAY_LOOP_COUNT; ul++) {
+		for (ul = 0; ul < (0.5*mainDELAY_LOOP_COUNT); ul++) {
 			/* This loop is just a very crude delay implementation.  There is
 			 * nothing to do in here.  Later exercises will replace this crude
 			 * loop with a proper delay/sleep function. */
@@ -108,7 +108,7 @@ static void vTask1(void *pvParameters)
 /* UART (or output) & LED OFF thread */
 static void vTask2(void *pvParameters)
 {
-	const char *pcTaskName = "Task 2 is running\r\n";
+	const char *pcTaskName = "HOLA MATU\r\n";
 	volatile unsigned long ul;
 
 	/* As per most tasks, this task is implemented in an infinite loop. */
@@ -119,7 +119,7 @@ static void vTask2(void *pvParameters)
 		DEBUGOUT(pcTaskName);
 
 		/* Delay for a period. */
-		for (ul = 0; ul < mainDELAY_LOOP_COUNT; ul++) {
+		for (ul = 0; ul < (0.5*mainDELAY_LOOP_COUNT); ul++) {
 			/* This loop is just a very crude delay implementation.  There is
 			nothing to do in here.  Later exercises will replace this crude
 			loop with a proper delay/sleep function. */
