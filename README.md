@@ -4,7 +4,7 @@
 
 Dado que estamos en un nuevo proyecto, debemos cambiar la configuración del debugger como se muestra a continuación:
 
-![](https://github.com/elmatus/TP2_sistemas_embebidos/blob/master/images/debugger.PNG)
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/debugger.PNG)
 
 ## Example 1 (Creating tasks):
 
