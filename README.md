@@ -58,4 +58,11 @@ Diagrama temporal:
 
 Se ve que se ejecuta la tarea 1, luego la 2 y dado que se utiliza la función vTaskDelay() que bloquea las tareas por 250ms, se entra en estado Idle por este tiempo. 
 
+## Example 5 ():
+
+A diferencia del ejemplo anterior se utiliza la función vTaskDelayUntil() para realizar la demora. A diferencia de vTaskDelay(), esta función realiza una demora del tiempo indicado real. Se especifica el valor absoluto de tiempo en el que queremos que la tarea se desbloquee y no importa que se realicen interrupciones en el medio de este tiempo, siempre va a contar el mismo tiempo. Con la función vTaskDelay() se especifica el tiempo en el que se quiere desbloquear una tarea relativo al tiempo en el cuál la función es llamada, lo que produce que el tiempo de bloqueo no siempre será el mismo.  
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/example5_vTaskFunction.PNG)
+
+
 # Example 10 to 16
