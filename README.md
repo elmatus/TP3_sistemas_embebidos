@@ -64,5 +64,8 @@ A diferencia del ejemplo anterior se utiliza la función vTaskDelayUntil() para 
 
 ![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/example5_vTaskFunction.PNG)
 
+Diagrama temporal:
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/example4_temporal.PNG)
 
 # Example 10 to 16
