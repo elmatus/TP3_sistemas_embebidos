@@ -83,3 +83,5 @@ Diagrama temporal:
   El ejemplo 12 utiliza un semaforo para indicar a las diferentes tareas cuando deberia realizar su operacion, en este caso tenemos dos tareas Handler y Periodic, una prende y apaga el led (Handler) mientras que Periodic coloca un delay en el medio de hander con el mismo tiempo de utilizacion que Handler. El diagrama de tiempo es el acontinuación
   
   ![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/ejercicio11.png)
+
+  Un semaforo indica a que tarea le corresponde ejecutar teniendo en cuenta que la otra tarea puede emitir el semaforo. La tarea que no esta operando se encuentra en un estado de bloqueo.
