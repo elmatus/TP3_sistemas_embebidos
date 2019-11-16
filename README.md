@@ -70,10 +70,10 @@ Diagrama temporal:
 
 # Example 10 to 16
 
-##Example 10():
+## Example 10():
 
   El ejemplo 10 utiliza una cola para distribuir las tareas. La siguiente imagen muestra el diagrama de tiempo sobre este ejercicio
   
  ![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/ejercicio10.png)
  
- El ejercicio tiene 3 tareas donde la dos primeras tienen la misma prioridad mientras que la tercera tiene una prioridad mayor, y un tiempo de espera de 100 mSeg. 
+ El ejercicio tiene 3 tareas donde la dos primeras tienen la misma prioridad mientras que la tercera tiene una prioridad mayor, y un tiempo de espera de 100 mSeg. Por la cola, la tarea de vReceiver recibe alternadamente las tareareas vSender1 y vSender2 provocando el primer tramo en el diagrama de tiempo, despues de 100 mSeg la tarea vSender1 comienza a mandar mas tareas que la tarea vSender2 provocando que el tiempo dedicaco a la tarea vSender1 es mayor que la de vSender2, despues de otros 100mSeg el tiempo de la tarea vSender1 se vuelve a agrandar mientras que la tarea vSender2 se mantiene. Hay que entender que una cola guarda la tarea recibida como una fila, y la primera tarea en entrar es la primera en salir provocando que el tiempo dedicado a cada tarea cambien cada 100 mSeg porque el vReciver espera 100mSeg para ejecutar todas las tareas.
