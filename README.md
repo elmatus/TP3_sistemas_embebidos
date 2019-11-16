@@ -69,3 +69,11 @@ Diagrama temporal:
 ![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/example4_temporal.PNG)
 
 # Example 10 to 16
+
+##Example 10():
+
+  El ejemplo 10 utiliza una cola para distribuir las tareas. La siguiente imagen muestra el diagrama de tiempo sobre este ejercicio
+  
+ ![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/ejercicio10.png)
+ 
+ El ejercicio tiene 3 tareas donde la dos primeras tienen la misma prioridad mientras que la tercera tiene una prioridad mayor, y un tiempo de espera de 100 mSeg. 
