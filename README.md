@@ -85,3 +85,21 @@ Diagrama temporal:
   ![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/ejercicio11.png)
 
   Un semaforo indica a que tarea le corresponde ejecutar teniendo en cuenta que la otra tarea puede emitir el semaforo. La tarea que no esta operando se encuentra en un estado de bloqueo.
+
+
+# Aplicaciones
+
+Las aplicaciones se encuentran en el archivo TP3_sistemas_embebidos/freertos_examples_10_to_16/example/src/freertos_examples_10_to_16.c y para ejecutar cada una de ellas hay que modificar la macro TEST, como en los ejemplos anteriores. 
+
+## Aplicación 1:
+
+En esta aplicación se cuenta con una tarea periodica (Task1), que se ejecuta cada 500ms y la cuál es la de mayor prioridad. Esta genera una interrupción y una vez que se entra a esta interrupción se activa el semaforo, que le hace que se ejecute la tarea 2. La tarea 2 agrega un número a una cola y luego este número es leido por la tarea 3 desde la cola. 
+
+A continuación se muestra en diagrama temporal:
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app1_temporal.PNG)
+  
+En la siguiente figura se muestra lo que se ve por pantalla al ejecutarse el programa:
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app1_monitor_serie.PNG)
+
