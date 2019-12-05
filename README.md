@@ -103,3 +103,41 @@ En la siguiente figura se muestra lo que se ve por pantalla al ejecutarse el pro
 
 ![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app1_monitor_serie.PNG)
 
+
+
+## Aplicación 2:
+
+En esta aplicación se cuenta con una tarea periodica (Task1), que se ejecuta cada 500ms y la cuál es la de mayor prioridad. Esta genera una interrupción y una vez que se entra a esta interrupción se activa el semaforo, que le hace que se ejecute la tarea 2. La tarea 2 agrega un número a una cola y luego este número es leido por la tarea 3 desde la cola. 
+
+A continuación se muestra en diagrama temporal:
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app1_temporal.PNG)
+  
+En la siguiente figura se muestra lo que se ve por pantalla al ejecutarse el programa:
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app1_monitor_serie.PNG)
+
+
+
+
+
+
+
+
+## Aplicación 3:
+
+En esta aplicación se cuenta con tres tareas (vTask) de igual prioridad. Una vez que se ejecuta la tarea, se enciende el led por 500ms y luego se mantiene apagado por otros 500ms, y pasa a la siguiente tarea, repitiendo el proceso.
+A continuación se muestra en diagrama temporal:
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_temporal.PNG)
+ 
+Se envia por puerto serie la tarea que esta realizando, luego prende el led durante 500ms, imprimiendo por pantalla "LED encendido", y luego apaga el LED por otros 500ms, imprimiendo "LED apagado"
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_vTask.PNG)
+
+El programa consiste en ejecutar las tareas mediante la funcion vTaskCreate, recibiendo como parametro la tarea, el nombre de la tarea a realizar y la prioridad (las tres prioridades poseen la misma prioridad).
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_main.PNG)
+
+En la siguiente figura se muestra lo que se ve por pantalla al ejecutarse el programa:
+
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_monitor_serie.PNG)
