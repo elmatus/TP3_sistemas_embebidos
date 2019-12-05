@@ -129,15 +129,15 @@ En la siguiente figura se muestra lo que se ve por pantalla al ejecutarse el pro
 En esta aplicación se cuenta con tres tareas (vTask) de igual prioridad. Una vez que se ejecuta la tarea, se enciende el led por 500ms y luego se mantiene apagado por otros 500ms, y pasa a la siguiente tarea, repitiendo el proceso.
 A continuación se muestra en diagrama temporal:
 
-![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_temporal.PNG)
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_temporal.png)
  
 Se envia por puerto serie la tarea que esta realizando, luego prende el led durante 500ms, imprimiendo por pantalla "LED encendido", y luego apaga el LED por otros 500ms, imprimiendo "LED apagado"
 
-![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_vTask.PNG)
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_vTask.png)
 
 El programa consiste en ejecutar las tareas mediante la funcion vTaskCreate, recibiendo como parametro la tarea, el nombre de la tarea a realizar y la prioridad (las tres prioridades poseen la misma prioridad).
-![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_main.PNG)
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_main.png)
 
 En la siguiente figura se muestra lo que se ve por pantalla al ejecutarse el programa:
 
-![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_monitor_serie.PNG)
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/app3_monitor_serie.png)
