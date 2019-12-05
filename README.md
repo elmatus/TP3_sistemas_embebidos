@@ -107,9 +107,9 @@ En la siguiente figura se muestra lo que se ve por pantalla al ejecutarse el pro
 
 ## Aplicación 2:
 
-En esta aplicación, se tíene la misma condiciones de tareas de la aplicación 1 solo que se cambia la cola por un semaforo y el semaforo por una cola (se invierte en semaforo por la cola). Logrando el mismo diagrama de tarea. En la siguiente figura mostramos lo que imprime por pantalla a ejecutarse el programa
+En esta aplicación, se tíene la misma condiciones de tareas que la aplicación 1 solo que se cambia la cola por un semaforo y el semaforo por una cola (se invierte en semaforo por la cola) logrando el mismo diagrama de tarea. En la siguiente figura mostramos lo que imprime por pantalla a ejecutarse el programa
 
-![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/aplicacion2.png)
+![](https://github.com/elmatus/TP3_sistemas_embebidos/blob/master/images/aplicacion2.PNG)
 
 ## Aplicación 3:
 
