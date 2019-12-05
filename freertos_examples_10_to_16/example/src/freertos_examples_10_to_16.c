@@ -1563,20 +1563,20 @@ int main(void)
      * a mutex type semaphore is created. */
 	xMutex = xSemaphoreCreateMutex();
 
-		/* Create Task1 */
+		/* Create Task2 */
+    	xTaskCreate(vTask, (char *) "Task2", configMINIMAL_STACK_SIZE,
+    				(void *) Task2Notifier, (tskIDLE_PRIORITY + 1UL), (xTaskHandle *) NULL);
+
+    	/* Create Task3 */
+    	xTaskCreate(vTask, (char *) "Task3", configMINIMAL_STACK_SIZE,
+          				(void *) Task3Notifier, (tskIDLE_PRIORITY + 1UL), (xTaskHandle *) NULL);
+
+    	/* Create Task1 */
     	xTaskCreate(vTask, (char *) "Task1", configMINIMAL_STACK_SIZE,
      				(void *) Task1Notifier, (tskIDLE_PRIORITY + 1UL), (xTaskHandle *) NULL);
 
-		/* Create Task2 */
 
-      	xTaskCreate(vTask, (char *) "Task2", configMINIMAL_STACK_SIZE,
-      				(void *) Task2Notifier, (tskIDLE_PRIORITY + 1UL), (xTaskHandle *) NULL);
-
-		/* Create Task3 */
-      xTaskCreate(vTask, (char *) "Task3", configMINIMAL_STACK_SIZE,
-      				(void *) Task3Notifier, (tskIDLE_PRIORITY + 1UL), (xTaskHandle *) NULL);
-
-     /* Start the scheduler so the created tasks start executing. */
+    	/* Start the scheduler so the created tasks start executing. */
      vTaskStartScheduler();
 
      /* If all is well we will never reach here as the scheduler will now be
